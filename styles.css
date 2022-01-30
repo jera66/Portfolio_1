@@ -244,6 +244,33 @@ header  .navbar ul li a:hover {
      background-image:  linear-gradient(80deg, #800, rgb(17, 5, 5));
     
 }
+.projects .box-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.projects .box-container .box {
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.projects .box-container .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.projects .box-container .box-container .box:hover  img  {
+    transform: scale(1.5);
+}
 @media screen and  (max-width: 1200px) {
     html {
     font-size: 55%;
@@ -280,7 +307,9 @@ header  .navbar ul li a:hover {
     .education .box-container .box {
         width: 100%;
     }
-   
+   .projects .box-container .box {
+       width: 100%;
+   }
 }
 @media screen and  (max-width: 768px) {
     html {
