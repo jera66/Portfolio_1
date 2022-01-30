@@ -328,6 +328,13 @@ header  .navbar ul li a:hover {
     color: rgb(119, 14, 14);
     padding: .5rem ;
 }
+.top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 50rem;
+    z-index: 100;
+    display: none;
+}
 @media screen and  (max-width: 1200px) {
     html {
     font-size: 55%;
