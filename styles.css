@@ -20,6 +20,9 @@ html {
     font-size: 62.5%;
     overflow-y: scroll;
 }
+html::-webkit-scrollbar{
+    background-image:  linear-gradient(80deg, #800, rgb(17, 5, 5));
+}
 
 body {
     background: #111;
@@ -242,7 +245,10 @@ header  .navbar ul li a:hover {
      text-align: center;
      font-size: 2rem;
      background-image:  linear-gradient(80deg, #800, rgb(17, 5, 5));
-    
+     -webkit-border-radius:;
+     -moz-border-radius:;
+     -ms-border-radius:;
+     -o-border-radius:;
 }
 .projects .box-container  {
     display: flex;
