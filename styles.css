@@ -38,6 +38,10 @@ section {
   margin-top: 2rem;
   font-size: 3rem;
   border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
 }
 .btn i  {
     padding: 0   .5rem;
@@ -45,6 +49,18 @@ section {
 }
 .btn:hover {
     background-image:  linear-gradient(80deg, #800, gray);
+}
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding:  1rem;
+    border-bottom: .1rem  solid gray;
+    color: silver;
+}
+.heading span {
+   color: rgb(66, 14, 14);
+    text-shadow: 1px 2px  gray;
 }
 header {
     position: fixed;
@@ -67,10 +83,10 @@ header .user  img {
     object-fit: cover;
     margin-bottom: 1rem;
     border: .7rem solid  grey;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 header .user .name {
     font-size: 3.5rem;
@@ -128,10 +144,57 @@ header  .navbar ul li a:hover {
     font-size: 5rem;
     color: silver;
 }
+.home h1 span {
+    color: rgb(66, 14, 14);
+    text-shadow: 1px 2px  gray;
+}
 .home  p{
     font-size: 2rem;
     color: #eee;
     padding: 1rem  0;
+}
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info  h3{
+    font-size: 2rem;
+    color: silver;
+    padding: 1rem;
+    font-weight: normal;
+}
+.about .row .info  h3  span{
+    color: silver;
+    padding:  0  .5rem;
+}
+.about .row .counter {
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 48rem;
+}
+.about .row .counter .box {
+    width: 20rem;
+     background-image:  linear-gradient(80deg, #800, rgb(17, 5, 5));
+     text-align: center;
+     padding: 2rem;
+     margin: 2rem;
+}
+.about .row .counter .box span {
+   font-size: 4rem;
+   color: silver;
+}
+.about .row .counter .box  h3 {
+   font-size: 2rem;
+   color: silver;
 }
 @media screen and  (max-width: 1200px) {
     html {
