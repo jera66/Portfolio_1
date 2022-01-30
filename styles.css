@@ -258,10 +258,10 @@ header  .navbar ul li a:hover {
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 .projects .box-container .box-container .box img {
     height: 100%;
@@ -270,6 +270,63 @@ header  .navbar ul li a:hover {
 }
 .projects .box-container .box-container .box:hover  img  {
     transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+
+}
+.contact .row  form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-image:  linear-gradient(80deg, #800, rgb(17, 5, 5));
+    color: silver;
+    text-transform:  none;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.contact .row form .box::placeholder {
+    text-transform: capitalize;
+}
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: silver;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: silver;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: rgb(119, 14, 14);
+    padding: .5rem ;
 }
 @media screen and  (max-width: 1200px) {
     html {
@@ -277,6 +334,9 @@ header  .navbar ul li a:hover {
     }
     .home {
         padding: 1rem 4rem;
+    }
+    header{
+        max-width: 100%;
     }
 }
 @media screen and  (max-width: 991px) {
@@ -295,7 +355,7 @@ header  .navbar ul li a:hover {
 }
 @media screen and  (max-width: 400px) {
     header {
-    width: 100vw;
+    width: 100%;
     }
 
     .heading {
@@ -309,6 +369,9 @@ header  .navbar ul li a:hover {
     }
    .projects .box-container .box {
        width: 100%;
+   }
+   .contact .row form {
+       margin: 3rem 0;
    }
 }
 @media screen and  (max-width: 768px) {
