@@ -196,6 +196,54 @@ header  .navbar ul li a:hover {
    font-size: 2rem;
    color: silver;
 }
+.education .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem ;
+}
+.education .box-container .box {
+    width: 27rem;
+    margin:  4rem 1rem;
+    padding-left: 4rem ;
+    border-left: .2rem  solid gray;
+    position: relative;
+}
+    .education .box-container .box  span{
+        font-size: 1.3rem;
+        color: silver;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+        padding: .5rem 2.5rem;
+}
+ .education .box-container .box  h3 {
+     font-size: 2rem;
+     color: silver;
+     padding-top: 1.5rem;
+ }
+ .education .box-container .box  p {
+     font-size: 1.5rem;
+     color: silver;
+     padding-top: 1rem 0;
+ }
+ .education .box-container .box  i {
+     position: absolute;
+     top: -1.5rem;
+     left: -2.5rem;
+     height: 5rem;
+     width: 5rem;
+     border-radius: 50% ;
+     line-height: 5rem;
+     text-align: center;
+     font-size: 2rem;
+     background-image:  linear-gradient(80deg, #800, rgb(17, 5, 5));
+    
+}
 @media screen and  (max-width: 1200px) {
     html {
     font-size: 55%;
@@ -221,6 +269,16 @@ header  .navbar ul li a:hover {
 @media screen and  (max-width: 400px) {
     header {
     width: 100vw;
+    }
+
+    .heading {
+        margin: 0  3rem;
+    }
+    .about .row .counter .box {
+        width: 100%;
+    }
+    .education .box-container .box {
+        width: 100%;
     }
    
 }
